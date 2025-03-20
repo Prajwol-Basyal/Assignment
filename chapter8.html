@@ -3,6 +3,34 @@
 <head>
     <link rel="stylesheet" href="indexstyle.css">
     <title>Computer Content</title>
+    <style>
+        /* Styling for Questions and Answers */
+        .qa-section {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .qa-question {
+            font-weight: bold;
+            color: #2e6da4;
+        }
+
+        .qa-answer {
+            margin-top: 10px;
+            background-color: #e9f5ff;
+            padding: 10px;
+            border-left: 4px solid #2e6da4;
+            color: #333;
+        }
+
+        /* Styling for other content in the container */
+        .container {
+            margin: auto;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,21 +45,159 @@
         <a href="chapter7.html">7. Multimedia</a>
         <a href="chapter8.html">8. Information security and cyber law</a>
     </nav>
-    <div class="container" style="margin: auto; width: 80%;">
+    <div class="container">
         <h1>Information Security and Cyber Law</h1>
-        <p>Information security involves protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction. Key aspects include:</p>
+        <p>Information security involves the protection of information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction. This protection is essential to ensure the confidentiality, integrity, and availability of data. Key aspects of information security include:</p>
+        
+        <h2>Key Aspects of Information Security</h2>
         <ul>
-            <li><strong>Data Integrity:</strong> Ensuring that data is accurate and reliable.</li>
-            <li><strong>Data Privacy:</strong> Protecting personal information from unauthorized access.</li>
-            <li><strong>Access Control:</strong> Restricting access to information systems to authorized users.</li>
-            <li><strong>Incident Response:</strong> Preparing for and responding to security breaches.</li>
+            <li><strong>Data Integrity:</strong> Ensuring that data remains accurate, complete, and unaltered during storage, processing, or transmission. For example, checksums and hashes are used to verify data integrity.</li>
+            <li><strong>Data Privacy:</strong> Protecting personal and sensitive information from unauthorized access and misuse. Encryption and anonymization techniques are commonly used to maintain privacy.</li>
+            <li><strong>Access Control:</strong> Restricting access to information systems to authorized users only. This is achieved through techniques like passwords, multi-factor authentication (MFA), and role-based access control (RBAC).</li>
+            <li><strong>Incident Response:</strong> The process of detecting, responding to, and recovering from security breaches or cyberattacks. This may include identifying the source of the breach, mitigating its effects, and restoring systems to normal operation.</li>
         </ul>
-        <p>Cyber law refers to the legal regulations that govern the use of the internet and digital communications. Understanding these laws is essential for:</p>
+
+        <h2>Cyber Law</h2>
+        <p>Cyber law refers to the legal regulations and standards that govern the use of the internet, digital communications, and online behaviors. With the increasing reliance on technology and the internet, understanding cyber laws is crucial for ensuring legal compliance and protecting rights in the digital world. Key areas of cyber law include:</p>
         <ul>
-            <li>Ensuring compliance with legal standards.</li>
-            <li>Protecting rights in the digital space.</li>
-            <li>Addressing issues related to cybercrime and online privacy.</li>
+            <li><strong>Intellectual Property (IP) Rights:</strong> Protecting digital creations, inventions, and works such as software, digital content, and patents. Laws like copyright and trademarks safeguard the interests of creators.</li>
+            <li><strong>Privacy Laws:</strong> Protecting personal data from unauthorized access and ensuring compliance with data protection regulations like the GDPR (General Data Protection Regulation) in Europe.</li>
+            <li><strong>Cybercrime:</strong> Laws that address crimes like hacking, identity theft, online fraud, and cyberbullying. Cybercriminals who engage in illegal activities via the internet can face prosecution under cyber laws.</li>
+            <li><strong>Electronic Contracts and Signatures:</strong> The legality of digital contracts, e-signatures, and electronic transactions in business and government processes.</li>
         </ul>
+
+        <h2>Importance of Cyber Law</h2>
+        <p>Cyber law plays a significant role in the digital age as it:</p>
+        <ul>
+            <li>Ensures that individuals and organizations comply with legal standards while using digital platforms.</li>
+            <li>Protects the intellectual property of digital content creators and developers.</li>
+            <li>Helps in the prevention and prosecution of cybercrimes like hacking, fraud, and identity theft.</li>
+            <li>Safeguards user data and privacy by enforcing data protection regulations.</li>
+        </ul>
+        <p class="qa-question">2. What is computer ethics? What are the commandments of computer ethics?</p>
+        <div class="qa-answer">
+            <p>Computer ethics refers to the set of moral principles that govern the usage of computers and information systems.</p>
+            <strong>Commandments of Computer Ethics:</strong>
+            <ul>
+                <li>Do not use a computer to harm other people.</li>
+                <li>Do not interfere with other people’s computer work.</li>
+                <li>Do not snoop around in other people’s computer files.</li>
+                <li>Do not use a computer to steal.</li>
+                <li>Do not use a computer to bear false witness.</li>
+                <li>Do not copy or use proprietary software for which you have not paid.</li>
+                <li>Do not use other people’s computer resources without authorization.</li>
+                <li>Do not claim other people’s intellectual output as your own.</li>
+                <li>Think about the social consequences of the program you are writing.</li>
+                <li>Use a computer in ways that ensure consideration and respect for others.</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">3. Discuss about the role of computer ethics in the formation of secure and reliable digital society.</p>
+        <div class="qa-answer">
+            <p>Computer ethics plays a crucial role in the formation of a secure and reliable digital society by guiding users on responsible behavior online. It helps reduce cybercrimes, ensures respect for privacy and intellectual property, promotes fairness, and builds trust among digital users. Ethical behavior in cyberspace ensures safety, integrity, and proper use of digital resources for the betterment of society.</p>
+        </div>
+        
+        <p class="qa-question">4. Explain the basic principles/components of information security.</p>
+        <div class="qa-answer">
+            <ul>
+                <li><strong>Confidentiality:</strong> Protecting information from unauthorized access.</li>
+                <li><strong>Integrity:</strong> Ensuring data remains accurate and unaltered.</li>
+                <li><strong>Availability:</strong> Ensuring information is available when needed.</li>
+                <li><strong>Authentication:</strong> Verifying the identity of users and systems.</li>
+                <li><strong>Non-repudiation:</strong> Ensuring that actions or transactions cannot be denied.</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">5. Define cyber law. What are the major fields of cyber law?</p>
+        <div class="qa-answer">
+            <p>Cyber law is the law governing digital and online activities. It ensures legal recognition of electronic records, prevents cybercrimes, and safeguards rights in the digital world.</p>
+            <p><strong>Major fields of cyber law include:</strong></p>
+            <ul>
+                <li>Cybercrime control</li>
+                <li>Protection of intellectual property rights</li>
+                <li>Data protection and privacy laws</li>
+                <li>Electronic contracts and digital signatures</li>
+                <li>E-commerce and online transaction regulations</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">6. How do you know that your computer has been victim of malware attack?</p>
+        <div class="qa-answer">
+            <ul>
+                <li>Slow computer performance</li>
+                <li>Frequent crashes or system freezing</li>
+                <li>Appearance of unusual pop-ups</li>
+                <li>Programs opening or closing automatically</li>
+                <li>Unusual error messages</li>
+                <li>Files missing or inaccessible</li>
+                <li>Antivirus program disabled without your knowledge</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">7. How can you protect you and your computer system from cybercrime?</p>
+        <div class="qa-answer">
+            <ul>
+                <li>Use strong and unique passwords</li>
+                <li>Install and regularly update antivirus software</li>
+                <li>Enable firewalls</li>
+                <li>Be cautious while opening emails and links</li>
+                <li>Regularly update operating system and software</li>
+                <li>Backup important data</li>
+                <li>Use secure Wi-Fi networks</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">8. What are the advantages and disadvantages of digital signature?</p>
+        <div class="qa-answer">
+            <p><strong>Advantages:</strong></p>
+            <ul>
+                <li>Provides authenticity and integrity of documents</li>
+                <li>Legally recognized and accepted</li>
+                <li>Saves time and cost</li>
+                <li>Environmentally friendly as it reduces paper usage</li>
+            </ul>
+            <p><strong>Disadvantages:</strong></p>
+            <ul>
+                <li>Requires digital certificates and infrastructure</li>
+                <li>Can be compromised if private key is stolen</li>
+                <li>Acceptance issues in some countries and organizations</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">9. Explain various areas that are generally covered in cyber law.</p>
+        <div class="qa-answer">
+            <ul>
+                <li>Protection against cybercrimes</li>
+                <li>Intellectual property rights in cyberspace</li>
+                <li>Data protection and privacy</li>
+                <li>Electronic commerce and digital transactions</li>
+                <li>Regulation of electronic signatures and contracts</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">10. Explain cyber law in Nepal with major provisions included.</p>
+        <div class="qa-answer">
+            <p>Cyber law in Nepal is mainly governed by the Electronic Transaction Act (ETA) 2063.</p>
+            <p><strong>Major provisions include:</strong></p>
+            <ul>
+                <li>Legal recognition of electronic transactions and digital signatures</li>
+                <li>Punishment for cybercrimes like hacking, fraud, and data theft</li>
+                <li>Protection of intellectual property rights</li>
+                <li>Regulation of electronic records and documents</li>
+                <li>Provisions for digital contracts and e-governance</li>
+            </ul>
+        </div>
+        
+        <p class="qa-question">11. List out the major objectives of ICT Policy 2072.</p>
+        <div class="qa-answer">
+            <ul>
+<li>                Promote ICT for national development</li>
+<li>                Expand ICT infrastructure to rural areas</li>
+<li>                Encourage e-governance and digital services</li>
+<li>                Develop skilled human resources in ICT</li>
+<li>                Increase public access to ICT services</li>
+<li>                Strengthen cybersecurity and data protection</li>
+            </ul>        
     </div>
 </body>
 </html>

@@ -3,6 +3,34 @@
 <head>
     <link rel="stylesheet" href="indexstyle.css">
     <title>Computer Content</title>
+    <style>
+        /* Styling for Questions and Answers */
+        .qa-section {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .qa-question {
+            font-weight: bold;
+            color: #2e6da4;
+        }
+
+        .qa-answer {
+            margin-top: 10px;
+            background-color: #e9f5ff;
+            padding: 10px;
+            border-left: 4px solid #2e6da4;
+            color: #333;
+        }
+
+        /* Styling for other content in the container */
+        .container {
+            margin: auto;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,19 +45,76 @@
         <a href="chapter7.html">7. Multimedia</a>
         <a href="chapter8.html">8. Information security and cyber law</a>
     </nav>
-    <div class="container" style="margin: auto; width: 80%;">
+    <div class="container">
         <h1>Computer Software and Operating System</h1>
         <p>Computer software refers to the programs and applications that run on a computer, enabling it to perform specific tasks. Software can be categorized into:</p>
         <ul>
             <li><strong>System Software:</strong> This includes operating systems like Windows, macOS, and Linux.</li>
             <li><strong>Application Software:</strong> This includes programs like word processors, web browsers, and games.</li>
         </ul>
-        <p>The operating system is crucial as it:</p>
+        <p>The operating system (OS) is crucial as it:</p>
         <ul>
             <li>Manages hardware resources.</li>
             <li>Provides a user interface for interaction.</li>
             <li>Facilitates the execution of application software.</li>
+            <li>Handles file management, security, and multitasking.</li>
         </ul>
+        <h2>Types of Operating Systems</h2>
+        <p>Operating systems can be categorized into the following types:</p>
+        <ul>
+            <li><strong>Single-tasking Operating Systems:</strong> These can run only one application at a time. Example: MS-DOS.</li>
+            <li><strong>Multi-tasking Operating Systems:</strong> These allow multiple applications to run simultaneously. Examples: Windows, macOS, Linux.</li>
+            <li><strong>Network Operating Systems:</strong> These manage network resources and allow multiple computers to connect and share resources. Example: Windows Server, Linux Server.</li>
+            <li><strong>Real-time Operating Systems (RTOS):</strong> These are designed for systems requiring high reliability and real-time responses, such as embedded systems. Example: VxWorks.</li>
+        </ul>
+
+        <h2>Examples of Popular Operating Systems</h2>
+        <ul>
+            <li><strong>Windows:</strong> A popular operating system for personal computers, known for its user-friendly interface.</li>
+            <li><strong>macOS:</strong> The operating system developed by Apple for Macintosh computers, known for its sleek design and stability.</li>
+            <li><strong>Linux:</strong> An open-source operating system that is widely used for servers and desktops. Known for its flexibility and security.</li>
+            <li><strong>Android:</strong> A mobile operating system based on Linux, used primarily on smartphones and tablets.</li>
+        </ul>
+
+        <h2>Functions of an Operating System</h2>
+        <ul>
+            <li><strong>Process Management:</strong> An OS manages processes, ensuring that they are executed efficiently and without conflict.</li>
+            <li><strong>Memory Management:</strong> The OS ensures that each application has enough memory to operate without interfering with others.</li>
+            <li><strong>File System Management:</strong> The OS manages files on a computer, organizing them in directories and ensuring data is stored and retrieved efficiently.</li>
+            <li><strong>Security:</strong> The OS enforces security policies to prevent unauthorized access to files and system resources.</li>
+            <li><strong>Device Management:</strong> The OS manages hardware devices such as printers, keyboards, and hard drives.</li>
+        </ul>
+
+        <!-- Questions and Answers Section -->
+        <div class="qa-section">
+            <p class="qa-question">1. What is the main difference between system software and application software?</p>
+            <div class="qa-answer">
+                <p><strong>System software</strong> helps run the hardware and provides a platform for running application software. It includes the operating system, device drivers, and utilities. Examples are Windows, macOS, and Linux. <br>
+                <strong>Application software</strong> helps users perform specific tasks such as writing documents, browsing the web, or editing photos. Examples are Microsoft Word, Google Chrome, and Photoshop.</p>
+            </div>
+
+            <p class="qa-question">2. What is the purpose of an operating system?</p>
+            <div class="qa-answer">
+                <p>The purpose of an operating system (OS) is to manage the hardware of a computer and provide a user interface. It facilitates the execution of application software, manages resources like memory and processing power, handles file management, and ensures system security.</p>
+            </div>
+
+            <p class="qa-question">3. What is the difference between a single-tasking and a multi-tasking operating system?</p>
+            <div class="qa-answer">
+                <p><strong>Single-tasking operating systems</strong> can only run one application at a time. Example: MS-DOS. <br>
+                <strong>Multi-tasking operating systems</strong> can run multiple applications simultaneously. Examples: Windows, macOS, and Linux.</p>
+            </div>
+
+            <p class="qa-question">4. Can you give examples of real-time operating systems?</p>
+            <div class="qa-answer">
+                <p>Real-time operating systems (RTOS) are designed for systems that require immediate processing and high reliability. Examples include VxWorks, RTEMS, and FreeRTOS, often used in embedded systems like medical devices and automotive control systems.</p>
+            </div>
+
+            <p class="qa-question">5. What is the difference between Windows and Linux operating systems?</p>
+            <div class="qa-answer">
+                <p><strong>Windows</strong> is a closed-source operating system developed by Microsoft, with a focus on user-friendliness and broad software compatibility. <br>
+                <strong>Linux</strong> is an open-source operating system, known for its flexibility, security, and use in server environments. It is widely used for software development, embedded systems, and as a server OS.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

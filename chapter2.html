@@ -3,6 +3,34 @@
 <head>
     <link rel="stylesheet" href="indexstyle.css">
     <title>Computer Content</title>
+    <style>
+        /* Styling for Questions and Answers */
+        .qa-section {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .qa-question {
+            font-weight: bold;
+            color: #2e6da4;
+        }
+
+        .qa-answer {
+            margin-top: 10px;
+            background-color: #e9f5ff;
+            padding: 10px;
+            border-left: 4px solid #2e6da4;
+            color: #333;
+        }
+
+        /* Styling for other content in the container */
+        .container {
+            margin: auto;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,7 +45,7 @@
         <a href="chapter7.html">7. Multimedia</a>
         <a href="chapter8.html">8. Information security and cyber law</a>
     </nav>
-    <div class="container" style="margin: auto; width: 80%;">
+    <div class="container">
         <h1>Number System and Conversion & Boolean Logic</h1>
         <p>The number system is a way of representing numbers in various forms, such as:</p>
         <ul>
@@ -27,7 +55,42 @@
             <li><strong>Hexadecimal:</strong> Base-16 number system using digits 0-9 and letters A-F.</li>
         </ul>
         <p>Understanding these systems is crucial for computer science, as computers operate using binary (0s and 1s). Conversion between these systems is a fundamental skill.</p>
-        
+
+        <h2>Number System Conversion</h2>
+        <p>Here are some common number system conversions:</p>
+        <ul>
+            <li><strong>Binary to Decimal:</strong> Convert each binary digit (bit) into its decimal equivalent, then add up the values.</li>
+            <li><strong>Decimal to Binary:</strong> Repeatedly divide the decimal number by 2 and keep track of the remainders until you reach 0.</li>
+            <li><strong>Hexadecimal to Binary:</strong> Each hexadecimal digit corresponds to a 4-bit binary value.</li>
+            <li><strong>Binary to Hexadecimal:</strong> Group the binary digits into sets of four, starting from the right, and convert each group to its hexadecimal equivalent.</li>
+        </ul>
+        <p>For example, to convert the decimal number 10 to binary, we divide 10 by 2:</p>
+        <pre>
+            10 ÷ 2 = 5 remainder 0
+            5 ÷ 2 = 2 remainder 1
+            2 ÷ 2 = 1 remainder 0
+            1 ÷ 2 = 0 remainder 1
+        </pre>
+        <p>The binary representation of 10 is <strong>1010</strong>.</p>
+
+        <h2>One's Complement</h2>
+        <p>One's complement is a way of representing negative numbers in binary. To find the one's complement of a binary number, flip all the bits (change all 1s to 0s and all 0s to 1s).</p>
+        <p>For example, let's find the one's complement of the binary number <strong>1010</strong>:</p>
+        <pre>
+            Original:    1010
+            One's Complement: 0101
+        </pre>
+
+        <h2>Two's Complement</h2>
+        <p>Two's complement is another way of representing negative numbers in binary. It is similar to one's complement but involves an additional step. After finding the one's complement, you add 1 to the result.</p>
+        <p>For example, let's find the two's complement of the binary number <strong>1010</strong>:</p>
+        <pre>
+            Original:    1010
+            One's Complement: 0101
+            Add 1:      0110
+        </pre>
+        <p>The two's complement of <strong>1010</strong> is <strong>0110</strong>.</p>
+
         <h2>Boolean Logic</h2>
         <p>Boolean logic involves the use of true/false values and is essential for programming and circuit design. Key points include:</p>
         <ul>
@@ -35,6 +98,60 @@
             <li>Utilizes logical operators such as AND, OR, and NOT.</li>
             <li>Helps in constructing logical expressions and conditions.</li>
         </ul>
+        <p>Some common Boolean expressions:</p>
+        <ul>
+            <li><strong>AND:</strong> Returns true if both conditions are true.</li>
+            <li><strong>OR:</strong> Returns true if at least one condition is true.</li>
+            <li><strong>NOT:</strong> Inverts the boolean value (true becomes false, and false becomes true).</li>
+        </ul>
+
+        <!-- Questions and Answers Section -->
+        <div class="qa-section">
+            <p class="qa-question">1. What is the binary representation of the decimal number 15?</p>
+            <div class="qa-answer">
+                <p>The binary representation of 15 is <strong>1111</strong>. To convert, repeatedly divide by 2 and note the remainders:</p>
+                <pre>
+                    15 ÷ 2 = 7 remainder 1
+                    7 ÷ 2 = 3 remainder 1
+                    3 ÷ 2 = 1 remainder 1
+                    1 ÷ 2 = 0 remainder 1
+                </pre>
+                <p>The binary number is <strong>1111</strong>.</p>
+            </div>
+
+            <p class="qa-question">2. How do you convert a binary number to hexadecimal?</p>
+            <div class="qa-answer">
+                <p>To convert a binary number to hexadecimal:</p>
+                <ul>
+                    <li>Group the binary digits into sets of four (starting from the right).</li>
+                    <li>Convert each group of four bits into a single hexadecimal digit.</li>
+                </ul>
+                <p>Example: Binary <strong>101101</strong> becomes <strong>0010 1101</strong>, which is <strong>2D</strong> in hexadecimal.</p>
+            </div>
+
+            <p class="qa-question">3. What is the result of the Boolean expression: true AND false?</p>
+            <div class="qa-answer">
+                <p>The result of <strong>true AND false</strong> is <strong>false</strong>, because for an AND operation, both conditions must be true for the result to be true.</p>
+            </div>
+
+            <p class="qa-question">4. What is the one's complement of the binary number 1010?</p>
+            <div class="qa-answer">
+                <p>The one's complement of <strong>1010</strong> is <strong>0101</strong>. To find the one's complement, flip all the bits.</p>
+            </div>
+
+            <p class="qa-question">5. How do you calculate the two's complement of the binary number 1010?</p>
+            <div class="qa-answer">
+                <p>First, find the one's complement of the binary number:</p>
+                <pre>
+                    One's Complement of 1010: 0101
+                </pre>
+                <p>Then, add 1 to the result:</p>
+                <pre>
+                    Add 1: 0110
+                </pre>
+                <p>The two's complement of <strong>1010</strong> is <strong>0110</strong>.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

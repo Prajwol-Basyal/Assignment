@@ -3,6 +3,34 @@
 <head>
     <link rel="stylesheet" href="indexstyle.css">
     <title>Computer Content</title>
+    <style>
+        /* Styling for Questions and Answers */
+        .qa-section {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .qa-question {
+            font-weight: bold;
+            color: #2e6da4;
+        }
+
+        .qa-answer {
+            margin-top: 10px;
+            background-color: #e9f5ff;
+            padding: 10px;
+            border-left: 4px solid #2e6da4;
+            color: #333;
+        }
+
+        /* Styling for other content in the container */
+        .container {
+            margin: auto;
+            width: 80%;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,16 +45,101 @@
         <a href="chapter7.html">7. Multimedia</a>
         <a href="chapter8.html">8. Information security and cyber law</a>
     </nav>
-    <div class="container" style="margin: auto; width: 80%;">
+    <div class="container">
         <h1>Web Technology - I</h1>
-        <p>Web technology encompasses the tools and techniques used to create and manage websites and web applications. This includes understanding:</p>
-        <ul>
-            <li><strong>HTML:</strong> The markup language used to structure content on the web.</li>
-            <li><strong>CSS:</strong> The style sheet language used to describe the presentation of a document written in HTML.</li>
-            <li><strong>JavaScript:</strong> The programming language that adds interactivity to web pages.</li>
-        </ul>
-        <p>Familiarity with these technologies is essential for anyone looking to pursue a career in web development or design.</p>
+        <p>Web technology encompasses the tools and techniques used to create and manage websites and web applications. The key technologies in web development include:</p>
 
+        <h2>HTML (Hypertext Markup Language)</h2>
+        <p>HTML is the fundamental building block of web development. It is a markup language used to structure content on the web. With HTML, you can define the layout of a webpage by using a series of tags, such as:</p>
+        <ul>
+            <li><code>&lt;html&gt;</code>: Defines the beginning of an HTML document.</li>
+            <li><code>&lt;head&gt;</code>: Contains metadata and links to stylesheets or scripts.</li>
+            <li><code>&lt;body&gt;</code>: Contains the visible content of the webpage.</li>
+            <li><code>&lt;h1&gt; - &lt;h6&gt;</code>: Header tags used to define headings, with <code>&lt;h1&gt;</code> being the largest.</li>
+            <li><code>&lt;p&gt;</code>: Paragraph tag used to structure text content.</li>
+        </ul>
+        <p>Here’s a simple HTML example:</p>
+        <pre><code>&lt;html&gt;
+&lt;head&gt;&lt;title&gt;Web Development&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Welcome to Web Development&lt;/h1&gt;
+  &lt;p&gt;This is an introductory page about web technologies.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+        <h2>CSS (Cascading Style Sheets)</h2>
+        <p>CSS is used to describe the presentation of HTML elements. It controls the layout, colors, fonts, and other visual aspects of a webpage. With CSS, you can make a webpage visually appealing and responsive to different screen sizes. Key CSS properties include:</p>
+        <ul>
+            <li><code>color:</code> Specifies the text color.</li>
+            <li><code>background-color:</code> Sets the background color of an element.</li>
+            <li><code>font-size:</code> Defines the size of the text.</li>
+            <li><code>margin:</code> Adds space around elements.</li>
+            <li><code>padding:</code> Adds space inside an element.</li>
+        </ul>
+        <p>Here’s an example of using CSS to style HTML:</p>
+        <pre><code>h1 {
+  color: #4CAF50;
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}</code></pre>
+
+        <h2>JavaScript</h2>
+        <p>JavaScript is a programming language that adds interactivity to web pages. It allows developers to create dynamic content that responds to user actions, such as clicks, form submissions, and mouse movements. Common uses of JavaScript include:</p>
+        <ul>
+            <li>Form validation</li>
+            <li>Interactive maps</li>
+            <li>Animations</li>
+            <li>Content updates without reloading the page (AJAX)</li>
+        </ul>
+        <p>Here’s a simple JavaScript example that changes the content of a paragraph when a button is clicked:</p>
+        <pre><code>&lt;button onclick="changeContent()"&gt;Click me&lt;/button&gt;
+&lt;p id="demo"&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+function changeContent() {
+  document.getElementById("demo").innerHTML = "You clicked the button!";
+}
+&lt;/script&gt;</code></pre>
+
+        <h2>Importance of Web Technologies</h2>
+        <p>Understanding HTML, CSS, and JavaScript is essential for anyone pursuing a career in web development or design. Together, these technologies form the backbone of modern websites and web applications. Mastering them allows you to:</p>
+        <ul>
+            <li>Create well-structured and styled web pages.</li>
+            <li>Make webpages interactive and user-friendly.</li>
+            <li>Build dynamic websites that can handle various user inputs and actions.</li>
+        </ul>
+
+        <!-- Questions and Answers Section -->
+        <div class="qa-section">
+            <p class="qa-question">1. What is the purpose of HTML in web development?</p>
+            <div class="qa-answer">
+                <p>HTML is used to structure content on the web. It defines the layout of a webpage and organizes content into elements like headings, paragraphs, links, and images, which the browser can display.</p>
+            </div>
+
+            <p class="qa-question">2. How does CSS enhance a webpage?</p>
+            <div class="qa-answer">
+                <p>CSS is used to control the look and feel of a webpage. It allows you to style HTML elements by defining their colors, sizes, layouts, and positions, making the webpage visually appealing and responsive.</p>
+            </div>
+
+            <p class="qa-question">3. What role does JavaScript play in web development?</p>
+            <div class="qa-answer">
+                <p>JavaScript adds interactivity to web pages. It allows developers to create dynamic content that responds to user actions, such as clicks, form submissions, and changes in the webpage's content, providing a better user experience.</p>
+            </div>
+
+            <p class="qa-question">4. Can you give an example of a dynamic webpage feature?</p>
+            <div class="qa-answer">
+                <p>One example is an interactive form that validates user input. JavaScript can check if the fields are filled correctly before the form is submitted, improving usability and reducing errors.</p>
+            </div>
+
+            <p class="qa-question">5. Why is it important to learn web technologies?</p>
+            <div class="qa-answer">
+                <p>Learning web technologies like HTML, CSS, and JavaScript is crucial for building modern websites and web applications. These skills are essential for anyone pursuing a career in web development, as they enable the creation of well-structured, styled, and interactive web content.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
