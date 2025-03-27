@@ -30,57 +30,114 @@
             margin: auto;
             width: 80%;
         }
+        .output img{
+            width: auto;
+            height: 100px;
+            border-radius: 20px;
+            padding: 15px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <h1>Menu</h1>
         <a href="index.html">Home</a>
-        <a href="chapter1.html">1. Computer system</a>
-        <a href="chapter2.html">2. Number system and conversion & Boolean logic</a>
-        <a href="chapter3.html">3. Computer software and operating system</a>
-        <a href="chapter4.html">4. Application package</a>
-        <a href="chapter5.html">5. Programming concepts and logics</a>
-        <a href="chapter6.html">6. Web technology - I</a>
-        <a href="chapter7.html">7. Multimedia</a>
-        <a href="chapter8.html">8. Information security and cyber law</a>
+        <a href="#history">History of Programming</a>
+        <a href="#section1">Key Concepts</a>
+        <a href="#section2">Importance of programming concepts</a>
+        <a href="#section4">FAQ</a>
+        <a href="#section5">Programs</a>
     </nav>
     <div class="container">
-        <h1>Programming Concepts and Logics</h1>
-        <p>Programming concepts refer to the fundamental principles and techniques used in writing code. These concepts help programmers structure and organize their code efficiently, ensuring that software applications are both functional and maintainable. Key programming concepts include:</p>
+        <h1 id="title">Programming Concepts and Logics</h1>
+        <h2 id="history">History of Programming</h2>
+    
+        <p>
+            <strong>Programming</strong>, or computer programming, is the process of designing, writing, testing, and maintaining code that allows computers to perform specific tasks. 
+            It is the foundation of modern computing and has evolved significantly over the decades.
+        </p>
+    
+        <p>
+            The history of programming dates back to the early 19th century when <strong>Ada Lovelace</strong>, often considered the first programmer, worked on an algorithm for 
+            <em>Charles Babbage’s Analytical Engine</em>. However, programming truly took shape in the mid-20th century with the development of early computers such as 
+            <strong>ENIAC</strong> and <strong>UNIVAC</strong>, which relied on machine code and punch cards for instructions.
+        </p>
+    
+        <p>
+            In the 1950s and 60s, higher-level programming languages like <strong>FORTRAN, COBOL,</strong> and <strong>LISP</strong> emerged, making it easier for programmers to 
+            write complex instructions without dealing with raw binary code. The 1970s and 80s saw a rapid expansion in programming with the introduction of <strong>C</strong>, 
+            which became the foundation for many modern languages, and the rise of <em>object-oriented programming (OOP)</em> with languages like <strong>Smalltalk</strong> 
+            and later <strong>C++</strong>.
+        </p>
+    
+        <p>
+            The advent of personal computers in the 1980s and 90s led to the proliferation of languages such as <strong>Python, Java,</strong> and <strong>JavaScript</strong>, 
+            each designed to solve different challenges in software development. The internet revolution of the late 1990s and early 2000s introduced web development technologies 
+            like <strong>PHP</strong> and <strong>Ruby on Rails</strong>, while the increasing demand for mobile applications brought languages such as <strong>Swift</strong> 
+            and <strong>Kotlin</strong> into the spotlight.
+        </p>
+    
+        <p>
+            In recent years, programming has been heavily influenced by <strong>artificial intelligence, data science,</strong> and <strong>automation</strong>, leading to the rise 
+            of languages like <strong>R</strong> for statistical computing and frameworks like <strong>TensorFlow</strong> for machine learning. Today, programming continues to 
+            evolve with advancements in <strong>quantum computing, blockchain,</strong> and <strong>cloud computing</strong>, ensuring that software development remains a crucial 
+            and ever-changing field that drives innovation in almost every industry.
+        </p>        <h2>What is Programming?</h2>
+        <p>Programming, often referred to as coding, is the process of writing instructions that a computer can understand and execute. These instructions are written using programming languages such as C, Java, Python, and many more. A program is simply a sequence of statements that the computer follows to perform a specific task, such as calculations, data processing, or controlling hardware devices.</p>
+    
+        <h2 id="section1">Key Programming Concepts</h2>
+        <p>In this course, you will be introduced to several core programming concepts, including:</p>
         <ul>
-            <li><strong>Data Types:</strong> Understanding the different types of data, such as integers, floating-point numbers, strings, and booleans, is essential for selecting the right data type for specific tasks.</li>
-            <li><strong>Control Structures:</strong> Control structures, such as loops and conditionals, allow a program to control the flow of execution based on conditions or repeated tasks. Examples include <code>if</code>, <code>for</code>, and <code>while</code> statements.</li>
-            <li><strong>Functions:</strong> Functions are blocks of code designed to perform a specific task. By using functions, code can be reused, reducing redundancy and improving maintainability.</li>
-            <li><strong>Algorithms:</strong> An algorithm is a step-by-step procedure or formula for solving a problem. Understanding how to develop efficient algorithms is key to creating fast and effective programs.</li>
+            <li><strong>Variables and Data Types</strong></li>
+            <li><strong>Control Structures</strong></li>
+            <li><strong>Functions and Procedures</strong></li>
+            <li><strong>Loops</strong></li>
+            <li><strong>Arrays</strong></li>
+            <li><strong>Input and Output</strong></li>
+            <li><strong>Algorithms</strong></li>
         </ul>
-
-        <h2>Key Concepts Explained</h2>
-
-        <h3>Data Types</h3>
-        <p>Data types are fundamental to programming as they define the type of data that can be stored and manipulated within a program. Common data types include:</p>
+    
+        <h3>1. Variables and Data Types</h3>
+        <p>A variable is a named location in memory where data can be stored and accessed. Each variable is associated with a specific <strong>data type</strong>, which defines the kind of data it can store. Common data types include:</p>
         <ul>
-            <li><strong>Integer (int):</strong> Whole numbers, such as 1, -42, or 1000.</li>
-            <li><strong>Floating-point (float):</strong> Numbers with decimals, such as 3.14, -0.001, or 100.0.</li>
-            <li><strong>String (str):</strong> A sequence of characters, such as "hello" or "12345".</li>
-            <li><strong>Boolean (bool):</strong> A value that represents True or False.</li>
+            <li><code>int</code> - for integers (whole numbers)</li>
+            <li><code>float</code> - for decimal numbers</li>
+            <li><code>char</code> - for single characters</li>
+            <li><code>string</code> - for sequences of characters (text)</li>
         </ul>
-
-        <h3>Control Structures</h3>
-        <p>Control structures guide the flow of execution in a program, making decisions and repeating certain tasks. Key control structures include:</p>
+        <p>Example: <code>int age = 16;</code></p>
+    
+        <h3>2. Control Structures</h3>
+        <p>Control structures allow a programmer to control the flow of execution in a program. There are two main types of control structures:</p>
         <ul>
-            <li><strong>If-else statements:</strong> Used to perform different actions based on different conditions.</li>
-            <li><strong>For loops:</strong> Used to repeat a block of code a specific number of times.</li>
-            <li><strong>While loops:</strong> Used to repeat a block of code while a condition is true.</li>
+            <li><strong>Conditional Statements</strong> - These statements allow the program to make decisions based on certain conditions. The most common conditional statement is the <code>if-else</code> structure.</li>
+            <li><strong>Switch-Case Statements</strong> - A multi-way branch that is often used when a variable can have multiple possible values.</li>
         </ul>
-
-        <h3>Functions</h3>
-        <p>Functions are blocks of reusable code that perform a specific task. Functions allow programmers to break their code into smaller, more manageable pieces. Functions can accept input parameters and return output values. Example in Python:</p>
-        <pre><code>def add_numbers(a, b):
-    return a + b</code></pre>
-        <p>This function takes two parameters, <code>a</code> and <code>b</code>, and returns their sum.</p>
-
-        <h3>Algorithms</h3>
+        <p>Example: <code>if (age >= 18) { // do something }</code></p>
+    
+        <h3>3. Functions and Procedures</h3>
+        <p>Functions (also known as methods or procedures in some languages) are blocks of code that perform a specific task. They are used to break down complex problems into smaller, manageable parts. Functions can take <strong>parameters</strong> (input values) and return <strong>values</strong> as outputs.</p>
+        <p>Example of a function definition:</p>
+        <pre><code>int addNumbers(int a, int b) {
+        return a + b;
+    }</code></pre>
+    
+        <h3>4. Loops</h3>
+        <p>Loops are used to repeat a block of code multiple times, which is useful for tasks like iterating through arrays or repeating an operation until a certain condition is met. There are two main types of loops:</p>
+        <ul>
+            <li><strong>For Loop</strong> - Used when the number of iterations is known beforehand.</li>
+            <li><strong>While Loop</strong> - Used when the number of iterations is not known, and the loop continues until a condition becomes false.</li>
+        </ul>
+        <p>Example: <code>for (int i = 0; i < 5; i++) { // do something }</code></p>
+    
+        <h3>5. Arrays</h3>
+        <p>An array is a collection of data items of the same type, stored in a contiguous memory location. Arrays are used to store multiple values in a single variable, which can be accessed using an index. This is particularly useful when you have a large number of related values.</p>
+        <p>Example: <code>int numbers[5] = {1, 2, 3, 4, 5};</code></p>
+    
+        <h3>6. Input and Output (I/O)</h3>
+        <p>Input and output operations allow the program to interact with the user or external data. Input refers to receiving data from the user or another source (e.g., a file or sensor), and output refers to displaying information to the user or sending data elsewhere.</p>
+        <p>In most programming languages, input is taken using functions like <code>scanf</code> (in C) or <code>input()</code> (in Python), and output is displayed using functions like <code>printf</code> (in C) or <code>print()</code> (in Python).</p>
+        <h3>7. Algorithms</h3>
         <p>An algorithm is a step-by-step procedure or formula for solving a problem. Developing efficient algorithms is crucial for writing fast and optimized code. An example of a simple algorithm for finding the largest number in a list:</p>
         <pre><code>def find_largest(numbers):
     largest = numbers[0]
@@ -89,16 +146,33 @@
             largest = number
     return largest</code></pre>
 
-        <h2>Importance of Programming Concepts</h2>
-        <p>Mastering programming concepts such as data types, control structures, functions, and algorithms is essential for writing efficient and effective code. These concepts help programmers create software that is:</p>
-        <ul>
-            <li>Readable and maintainable.</li>
-            <li>Optimized for performance and efficiency.</li>
-            <li>Flexible and scalable to meet new requirements or changes.</li>
-        </ul>
+    <h2 id="section2">Importance of Programming</h2>
+
+    <ul>
+        <li><strong>Automation of Tasks:</strong> Programming allows repetitive tasks to be automated, reducing human effort and increasing efficiency.</li>
+        
+        <li><strong>Problem Solving & Innovation:</strong> Helps solve complex problems by creating algorithms and software solutions, driving innovation in various industries.</li>
+        
+        <li><strong>Development of Software & Applications:</strong> Enables the creation of operating systems, web applications, AI models, and gaming software.</li>
+        
+        <li><strong>Enhancing Artificial Intelligence & Machine Learning:</strong> AI and ML models rely on programming languages like Python, R, and Java to power innovations such as voice assistants and self-driving cars.</li>
+        
+        <li><strong>Cybersecurity & Data Protection:</strong> Essential for developing security systems that protect data from cyber threats and hackers.</li>
+        
+        <li><strong>Expanding Career Opportunities:</strong> Programming skills open doors to high-paying careers in software development, data science, and AI.</li>
+        
+        <li><strong>Internet & Web Development:</strong> Websites, social media platforms, and cloud services are built using languages like HTML, CSS, and JavaScript.</li>
+        
+        <li><strong>Robotics & Embedded Systems:</strong> Plays a key role in robotics, automation, and IoT (Internet of Things), powering smart devices and home automation.</li>
+        
+        <li><strong>Improves Logical Thinking & Creativity:</strong> Enhances problem-solving skills and encourages creativity by enabling the development of digital solutions.</li>
+        
+        <li><strong>Future of Technology:</strong> As technology advances, programming remains essential for fields like quantum computing, blockchain, and space exploration.</li>
+    </ul>
 
         <!-- Questions and Answers Section -->
         <div class="qa-section">
+            <h2 id="section4">Frequently Asked Questions.</h2>
             <p class="qa-question">1. What are data types in programming?</p>
             <div class="qa-answer">
                 <p>Data types define the type of data that can be stored and manipulated within a program. Examples include integers (whole numbers), floating-point numbers (decimal numbers), strings (sequences of characters), and booleans (True or False values).</p>
@@ -123,12 +197,166 @@
             <div class="qa-answer">
                 <p>Yes! Here is an example of an algorithm to find the largest number in a list:</p>
                 <pre><code>def find_largest(numbers):
-    largest = numbers[0]
-    for number in numbers:
-        if number > largest:
-            largest = number
-    return largest</code></pre>
+                largest = numbers[0]
+                for number in numbers:
+                    if number > largest:
+                        largest = number
+                return largest</code></pre>
                 <p>This algorithm iterates over the list and compares each number to find the largest one.</p>
+            </div>
+        </div>
+        <div class="programs">
+            <h2 id="section5">Some Frequently asked programs. </h2>
+            <p class="qa-question"> Write a program to check if inputted number is a prime number.</p>
+            <div class="qa-answer">
+                <pre><code>
+int main() {
+int num, i, isPrime = 1;
+printf("Enter a number: ");
+scanf("%d",&num);
+
+if (num <= 1) {
+    isPrime = 0;
+} else {
+    for (i = 2; i * i <= num; i++) {
+        if (num % i == 0) {
+            isPrime = 0;
+            break;
+        }
+    }
+}
+
+if (isPrime) {
+    printf("The given number is prime.");
+    return 0; 
+} else {
+    printf("The given number is not prime.");
+    return 1; 
+}}</code></pre>
+            </div>
+            <div class="output">
+                <h3>Output :- </h3>
+                <img src="output1.png">
+            </div>
+            <p class="qa-question"> Write a program to check if inputted number is a palindrome.</p>
+            <div class="qa-answer">
+                <pre><code>
+int main() {
+    int num, reversed = 0, remainder, original;
+    num = 121;  // Change this number to check other numbers
+
+    original = num;
+
+    while (num != 0) {
+        remainder = num % 10;
+        reversed = reversed * 10 + remainder;
+        num = num / 10;
+    }
+
+    if (original == reversed) {
+        return 0; // Palindrome
+    } else {
+        return 1; // Not Palindrome
+    }
+}
+
+                </code></pre>
+            </div>
+            <div class="output">                <h3>Output :- </h3>
+                <img src="output2.png">
+            </div>
+            <p class="qa-question"> Write a program to calculate the factorial of inputted number.</p>
+            <div class="qa-answer">
+                <pre><code>
+int main() {
+    int num, i, factorial = 1;
+    printf("Enter a number: ");
+    scanf("%d", &num);  // Taking input from the user
+
+    if (num < 0) {
+        return 1; // Factorial is not defined for negative numbers
+    }
+
+    for (i = 1; i <= num; i++) {
+        factorial *= i;
+    }
+    printf("The factorial is %d.", factorial);
+    return 0; // The factorial is stored in 'factorial' (You can display it if needed)
+}
+                </code></pre>
+            </div>
+            <div class="output">                <h3>Output :- </h3>
+                <img src="output3.png">
+            </div>
+            <p class="qa-question"> Write a program to check if inputted number is a perfect number.</p>
+            <div class="qa-answer">
+                <pre><code>
+int main() {
+    int num, i, sum = 0;
+
+    printf("Enter a number: "); // Ask the user to input a number
+    scanf("%d", &num);  // Take input from the user
+
+    // Check if the number is less than or equal to 0, which cannot be a perfect number
+    if (num <= 0) {
+        printf("Perfect number is only defined for positive integers.\n");
+        return 1;
+    }
+
+    // Find the sum of divisors of the number
+    for (i = 1; i < num; i++) {
+        if (num % i == 0) {
+            sum += i;  // Add divisors to the sum
+        }
+    }
+
+    // Check if the sum of divisors is equal to the number
+    if (sum == num) {
+        printf("%d is a perfect number.\n", num);  // Output if the number is perfect
+    } else {
+        printf("%d is not a perfect number.\n", num);  // Output if the number is not perfect
+    }
+
+    return 0;  }                    
+                </code></pre>
+            </div>
+            <div class="output">                <h3>Output :- </h3>
+                <img src="output4.png">
+            </div>
+            <p class="qa-question"> Write a program to print out the fibonacchi sequence until inputted term.</p>
+            <div class="qa-answer">
+                <pre><code>
+
+int main() {
+    int n, i;
+    int first = 0, second = 1, next;
+
+    printf("Enter the position (n) to find the nth term of Fibonacci sequence: ");
+    scanf("%d", &n);  // Take the input from the user
+
+    if (n <= 0) {
+        printf("Please enter a positive integer.\n");
+        return 1;
+    }
+
+    if (n == 1) {
+        printf("The %dth term in Fibonacci sequence is: %d\n", n, first);
+    } else if (n == 2) {
+        printf("The %dth term in Fibonacci sequence is: %d\n", n, second);
+    } else {
+        for (i = 3; i <= n; i++) {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        printf("The %dth term in Fibonacci sequence is: %d\n", n, second);
+    }
+
+    return 0;  }                      
+                </code></pre>
+            </div>
+            <div class="output">                <h3>Output :- </h3>
+                <img src="output5.png">
             </div>
         </div>
     </div>

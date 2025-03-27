@@ -4,7 +4,9 @@ body {
     background-color: #f8f8f8;
     font-family: sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 nav {
     width: 300px;
     height: 100vh;
